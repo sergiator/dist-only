@@ -1,0 +1,23 @@
+{
+  "name": "dist-only",
+  "version": "1.0.0",
+  "description": "Tool to deploy only dist folder of NodeJS project to Heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiator/dist-only.git"
+  },
+  "keywords": [
+    "deploy",
+    "heroku"
+  ],
+  "author": "sergiator <serj.kondrashov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiator/dist-only/issues"
+  },
+  "homepage": "https://github.com/sergiator/dist-only#readme"
+}
