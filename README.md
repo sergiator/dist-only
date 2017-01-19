@@ -8,6 +8,19 @@ Tool to deploy only dist folder of NodeJS project to Heroku.
 ```sh
 $ npm install dist-only --save-dev
 ```
+### Configuration
+Run
+```sh
+dist-only --init
+```
+or add manually `dist-only-run` and `dist-only-app` commands to `scripts` section of your `package.json`
+```sh
+"scripts": {
+    "dist-only-app": "echo \"$YOUR_HEROKU_APP_NAME\""
+    "dist-only-run": "node server.bundle.js"
+    ...
+}
+```
 ### Usage
 Without publishing
 ```
@@ -15,7 +28,7 @@ $ npm run dist-only
 ```
 With publishing
 ```
-$ npm run dist-only --deploy $YOUR_HEROKU_APP_NAME
+$ npm run dist-only --deploy
 ```
 ### Workflow
 
