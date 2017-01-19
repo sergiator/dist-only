@@ -6,7 +6,7 @@ Tool to deploy only dist folder of NodeJS project to Heroku.
 
 ### Installation
 ```sh
-$ npm install --save-dev
+$ npm install dist-only --save-dev
 ```
 ### Usage
 Without publishing
