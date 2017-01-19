@@ -23,14 +23,15 @@ Keep in mind that you have to store your development files not in the same repo 
 
 ### Requirements
 
-dist-only requires [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) to be installed on your machine.
+`dist-only` requires [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) to be installed on your machine.
 
 ### What it does in details?
 
-* it copies all content of your `dist` folder to your `dist-only` folder
+* it copies all content of your `dist` folder into `dist-only` folder
 * it copies your `package.json` w/o `devDependencies` section and replaces `run` script with `dist-only-run`
 * it copies your `Procfile` to `dist-only` folder
 * it keeps `.git` in `dist-only` folder related to your Heroku app
+* it deploys `dist-only` folder to Heroku
 
 
 License
