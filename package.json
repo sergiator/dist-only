@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Tool to deploy only dist folder of NodeJS project to Heroku",
   "main": "index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "scripts": {
-    "test": "node index.spec.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/sergiator/dist-only/issues"
   },
-  "homepage": "https://github.com/sergiator/dist-only#readme"
+  "bin": {
+    "dist-only": "./bin/dist-only"
+  },
+  "homepage": "https://github.com/sergiator/dist-only#readme",
+  "dependencies": {
+    "parent-package-json": "2.0.0"
+  }
 }

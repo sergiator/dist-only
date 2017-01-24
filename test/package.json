@@ -1,0 +1,15 @@
+{
+  "name": "dist-only-test",
+  "version": "1.0.0",
+  "description": "example package for dist-only testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"This is package original start script\"",
+    "test": "node index.js"
+  },
+  "devDepencies": {
+    "dist-only": "../"
+  },
+  "author": "",
+  "license": "MIT"
+}
